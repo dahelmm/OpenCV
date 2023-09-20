@@ -22,3 +22,14 @@ FORMS += \
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+INCLUDEPATH += D:\Work\OtherFiles\opencv\buildCMake\install\include
+
+OPENCVBIN = D:\Work\OtherFiles\opencv\buildCMake\bin
+
+LIBS += $$OPENCVBIN\libopencv_core480.dll \
+$$OPENCVBIN\libopencv_imgproc480.dll \
+$$OPENCVBIN\libopencv_highgui480.dll \
+$$OPENCVBIN\libopencv_imgcodecs480.dll \
+$$OPENCVBIN\libopencv_features2d480.dll \
+$$OPENCVBIN\libopencv_calib3d480.dll \
