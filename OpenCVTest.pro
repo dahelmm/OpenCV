@@ -9,10 +9,12 @@ CONFIG += c++17
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    facedetector.cpp \
     main.cpp \
     mainwindow.cpp
 
 HEADERS += \
+    facedetector.h \
     mainwindow.h
 
 FORMS += \
@@ -33,3 +35,5 @@ $$OPENCVBIN\libopencv_highgui480.dll \
 $$OPENCVBIN\libopencv_imgcodecs480.dll \
 $$OPENCVBIN\libopencv_features2d480.dll \
 $$OPENCVBIN\libopencv_calib3d480.dll \
+$$OPENCVBIN\libopencv_video480.dll \
+$$OPENCVBIN\libopencv_videoio480.dll \
